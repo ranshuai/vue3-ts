@@ -15,5 +15,4 @@ setupStore(app);
 setupRouter(app);
 // Configure components
 setupGlobComponents(app);
-
 app.mount('#app')

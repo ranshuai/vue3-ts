@@ -14,6 +14,7 @@ const dashboardConfigList: {}[] = [
           width: (1014 / 1920) * 10 + 'rem',
           height: (586 / 1920) * 10 + 'rem',
         },
+        echartsType:'TextBox'
       }
     ]
   }

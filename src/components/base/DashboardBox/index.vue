@@ -1,21 +1,25 @@
 <template>
   <div
     class="dashboard-item-box-wrapper"
-    :style="{ width: customBoxStyle.width, height: customBoxStyle.height }"
-  ></div>
+    :style="{
+      width: DashboardBox.customBoxStyle.width,
+      height: DashboardBox.customBoxStyle.height,
+    }"
+  >
+    <ComponentBlock :opt="DashboardBox"> </ComponentBlock>
+  </div>
 </template>
-
 <script lang="ts">
 const props = {
-  customBoxStyle: {
+  DashboardBox: {
     type: Object,
     require: true,
   },
 };
+
 export default {
   props,
   setup(props: any) {
-    console.log(props.customBoxStyle);
   },
 };
 </script>

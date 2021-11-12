@@ -7,12 +7,12 @@
     <!-- content -->
     <div v-for="(_item, _i) in dashboardConfigList" :key="_i">
       <div class="dashboard-row-box-wrapper">
-        <DashboardItemBox
+        <DashboardBox
           v-for="(item, i) in _item.list"
           :key="i + _i"
-          :customBoxStyle="item.customBoxStyle"
+          :DashboardBox="item"
         >
-        </DashboardItemBox>
+        </DashboardBox>
       </div>
     </div>
   </div>
