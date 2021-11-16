@@ -6,6 +6,83 @@ body {
   height: 100%;
   box-sizing: border-box;
 }
+
+.font-16{
+  font-size: 16px;
+}
+.font-18{
+  font-size: 18px;
+}
+.font-20{
+  font-size: 20px;
+}
+.font-19{
+  font-size: 19px;
+}
+.font-24{
+  font-size: 24px;
+}
+.font-38{
+  font-size: 38px;
+}
+.font-36{
+  font-size: 36px;
+}
+.font-48{
+  font-size: 48px;
+}
+.blue{
+ color: #1ed2ff
+}
+.w-percentage-100{
+  width: 100%;
+}
+.txt-center{
+  text-align: center;
+}
 .cursor-pointer {
   cursor: pointer;
+}
+.text-default-bg {
+  background: url(../assets/images/text.png) no-repeat;
+  background-size: 100% 100%;
+}
+
+
+/*  箭头样式  */
+.jiantou_hong_up {
+  background: url(../assets/images/jianTou/jiantou_hong_up.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_hong_down {
+  background: url(../assets/images/jianTou/jiantou_hong_down.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_huang_up {
+  background: url(../assets/images/jianTou/jiantou_huang_up.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_huang_down {
+  background: url(../assets/images/jianTou/jiantou_huang_down.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_lv_up {
+  background: url(../assets/images/jianTou/jiantou_lv_up.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_lv_down {
+  background: url(../assets/images/jianTou/jiantou_lv_down.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_heng_hong {
+  background: url(../assets/images/jianTou/jiantou_heng_hong.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_heng_huang {
+  background: url(../assets/images/jianTou/jiantou_heng_huang.png) no-repeat;
+  background-size: 100% 100%;
+}
+.jiantou_heng_lv {
+  background: url(../assets/images/jianTou/jiantou_heng_lv.png) no-repeat;
+  background-size: 100% 100%;
 }

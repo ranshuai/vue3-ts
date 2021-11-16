@@ -12,9 +12,15 @@ export default {
   
   render (context:any) {
     const { opt } = context
-    console.log(opt)
-    return h(resolveComponent(opt.echartsType),{
-      opt: opt
-    })
+    if(opt.echartsType){
+      return h(resolveComponent(opt.echartsType),{
+        opt: opt
+      })
+    }else{
+      return h('div',[
+        '叶子节点请配置组件类型'
+      ])
+    }
+   
   }
 }

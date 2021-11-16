@@ -22,6 +22,10 @@
       padding30: opt.customBoxStyle && opt.customBoxStyle.padding30,
       padding20: opt.customBoxStyle && opt.customBoxStyle.padding20,
     }"
+    :style="{
+      width: opt.customBoxStyle.width,
+      height: opt.customBoxStyle.height
+    }"
   >
     <div
       class="component-block-item"
@@ -30,6 +34,9 @@
     >
       <Item :opt="opt"></Item>
     </div>
+    <template v-else v-for="(item, i) in childrenList" :key="i">
+      <ComponentBlock :opt="item"></ComponentBlock>
+    </template>
   </div>
 </template>
 
@@ -44,8 +51,9 @@ const props = {
   },
 };
 export default {
+  name: 'ComponentBlock',
   props,
-  setup(props:any) {
+  setup(props: any) {
     const { customBoxStyle, childrenList } = props.opt as any;
     const hasChildren = computed(() => {
       let b = false;
@@ -57,6 +65,7 @@ export default {
 
     return {
       hasChildren,
+      childrenList
     };
   },
 };
